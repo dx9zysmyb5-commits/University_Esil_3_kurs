@@ -1,79 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои лабораторные работы</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #101820;
-            color: white;
-        }
-        header {
-            text-align: center;
-            padding: 55px 20px;
-            background: #172b3a;
-        }
-        h1 { color: #42e695; }
-        main {
-            max-width: 900px;
-            margin: 35px auto;
-            padding: 15px;
-        }
-        .subject {
-            background: #1c2d3b;
-            padding: 22px;
-            margin: 15px 0;
-            border-radius: 12px;
-        }
-        a {
-            color: #42e695;
-            text-decoration: none;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #aaa;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101820">
+  <title>Учебный архив — 3 курс</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #0d151c; color: #edf5f2; }
+    header { padding: 64px 20px 54px; text-align: center; background: linear-gradient(135deg, #142c35, #17241f); border-bottom: 1px solid #29443c; }
+    .tag { display: inline-block; padding: 7px 12px; border: 1px solid #39785e; border-radius: 999px; color: #8ce4b6; font-size: 13px; }
+    h1 { margin: 18px 0 10px; font-size: clamp(30px, 5vw, 46px); color: #8ce4b6; }
+    header p { margin: 0; color: #b6c9c2; }
+    main { width: min(100% - 32px, 1000px); margin: 38px auto 56px; }
+    .intro { margin-bottom: 22px; color: #b6c9c2; line-height: 1.6; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+    .subject { display: flex; flex-direction: column; min-height: 205px; padding: 22px; background: #17242d; border: 1px solid #2a3c45; border-radius: 16px; }
+    .subject h2 { margin: 0 0 10px; color: #f1faf6; font-size: 20px; }
+    .subject p { margin: 0 0 22px; color: #afc1bb; line-height: 1.55; flex: 1; }
+    .open { display: inline-block; align-self: flex-start; padding: 10px 14px; border-radius: 9px; background: #1c6949; color: white; text-decoration: none; font-weight: bold; }
+    .open:hover { background: #25875e; }
+    footer { padding: 25px 16px; text-align: center; color: #849b92; border-top: 1px solid #24343b; font-size: 14px; }
+  </style>
 </head>
 <body>
-
-<header>
-    <h1>Мои лабораторные работы</h1>
-    <p>Учебное портфолио | Esil University</p>
-</header>
-
-<main>
-    <h2>Мои предметы</h2>
-
-    <div class="subject">
-        <h3>Основы микропроцессорной техники (ОМТ)</h3>
-        <a href="OMT/">Открыть работы</a>
+  <header>
+    <span class="tag">ESIL UNIVERSITY · 3 КУРС</span>
+    <h1>Мой учебный архив</h1>
+    <p>Лабораторные работы, практические задания и учебные проекты</p>
+  </header>
+  <main>
+    <h2>Учебные дисциплины</h2>
+    <p class="intro">Выбери предмет, чтобы открыть его раздел. Ссылки и файлы лабораторных работ будут размещаться внутри соответствующих разделов.</p>
+    <div class="grid">
+      <article class="subject">
+        <h2>Основы микропроцессорной техники (ОМТ)</h2>
+        <p>Ссылки на выполненные лабораторные работы и дополнительные материалы.</p>
+        <a class="open" href="OMT/">Открыть раздел</a>
+      </article>
+      <article class="subject">
+        <h2>Графические методы защиты веб-приложений</h2>
+        <p>Лабораторные работы и материалы по защите веб-приложений.</p>
+        <a class="open" href="Graphic-Web-Application-Protection/">Открыть раздел</a>
+      </article>
+      <article class="subject">
+        <h2>Разработка стартапа</h2>
+        <p>Практические задания, бизнес-идеи и проекты по Startup.</p>
+        <a class="open" href="Startup-Development/">Открыть раздел</a>
+      </article>
+      <article class="subject">
+        <h2>Объектно-ориентированное программирование (ООП)</h2>
+        <p>Лабораторные работы, исходный код и задания по ООП.</p>
+        <a class="open" href="OOP/">Открыть раздел</a>
+      </article>
+      <article class="subject">
+        <h2>Big Data</h2>
+        <p>Лабораторные работы, наборы данных и практические задания.</p>
+        <a class="open" href="Big-Data/">Открыть раздел</a>
+      </article>
     </div>
-
-    <div class="subject">
-        <h3>Информационная безопасность</h3>
-        <a href="Information-Security/">Открыть работы</a>
-    </div>
-
-    <div class="subject">
-        <h3>Big Data</h3>
-        <a href="Big-Data/">Открыть работы</a>
-    </div>
-
-    <div class="subject">
-        <h3>Power BI</h3>
-        <a href="Power-BI/">Открыть работы</a>
-    </div>
-</main>
-
-<footer>
-    Мой учебный архив © 2026
-</footer>
-
+  </main>
+  <footer>Учебное портфолио · Esil University · 2026</footer>
 </body>
 </html>
