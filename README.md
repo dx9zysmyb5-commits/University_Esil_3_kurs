@@ -5,10 +5,11 @@
 ## Дисциплины
 
 1. [Основы микропроцессорной техники (ОМТ)](OMT/)
-2. [Графические методы защиты веб-приложений](Graphic-Web-Application-Protection/)
-3. [Разработка стартапа](Startup-Development/)
-4. [Объектно-ориентированное программирование (ООП)](OOP/)
-5. [Big Data](Big-Data/)
+2. [Защита веб-приложений](Graphic-Web-Application-Protection/)
+3. [Криптографические методы защиты информации (Cryptographic methods for information protection)](Cryptographic-Methods-for-Information-Protection/)
+4. [Разработка стартапа](Startup-Development/)
+5. [Объектно-ориентированное программирование (ООП)](OOP/)
+6. [Big Data](Big-Data/)
 
 ## Как устроен архив
 
